@@ -1,0 +1,103 @@
+@charset "utf-8";
+html {
+	height: 100%;
+}
+
+body {
+	margin: 0px;
+}
+
+#login {
+	width: 800px;
+	text-align: center;
+	margin: 70px auto auto;
+}
+
+#login .txt {
+	font-size: 16px;
+	font-weight: bold;
+	color: #0066CC;
+	margin-top: 10px;
+}
+
+#login .idpw { /* [disabled]background: #FFF; */
+	clear: both;
+	margin-top: 30px;
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+#login .idpw .input1 {
+	height: 50px;
+	line-height: 50px;
+	font: bold 18px Arial;
+	color: #999;
+	width: 690px;
+	background-color: transparent;
+	padding-left: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	float: left;
+}
+
+#login .idpw .idpwtxt {
+	float: left;
+	font-size: 18px;
+	color: #999;
+	font-weight: bold;
+	width: 90px;
+	display: block;
+	text-align: left;
+	margin-top: 15px;
+}
+
+.loginbtn {
+	width: 390px;
+	margin-right: 5px;
+	border-radius: 4px;
+	color: #fff;
+	border: none;
+	height: 50px;
+	background: #1e51a2;
+	font-weight: bold;
+}
+
+.findbtn {
+	width: 395px;
+	border-radius: 4px;
+	color: #fff;
+	border: none;
+	height: 50px;
+	background: #ed6d00;
+	font-weight: bold;
+}
+
+.notice {
+	overflow: auto;
+	color: #666;
+	margin-top: 30px;
+	border-radius: 5px;
+	background-color: #FFF;
+	border: 1px solid #ddd;
+}
+
+.notice .viewer {
+	text-align: left;
+	line-height: 18px;
+	padding: 20px;
+}
+
+.noticetitle {
+	color: #275CAC;
+	font: bold 24px Arial;
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+
+.footer {
+	margin-top: 20px;
+	letter-spacing: 0px;
+	font-size: 11px;
+	color: #000;
+}

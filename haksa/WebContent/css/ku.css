@@ -1,0 +1,69 @@
+@charset "utf-8";
+html,body{height:100%;}
+body { margin: 0px; }
+body,td,th,input,text,textarea,select {font-family:"맑은고딕","맑은 고딕", Malgun Gothic, "나눔고딕","나눔 고딕",Nanum Gothic, Tahoma; font-size:12px; letter-spacing:-1px}
+p,ul,li{margin:0; padding:0;}
+.input {border-radius:3px; border:1px solid #ddd; padding:5px;}
+.btn {border-radius:3px; border:1px solid #555; padding:5px 8px; background-color:#555; color:#fff;}
+.delbtn { border-radius: 3px; padding: 5px 8px; background-color: #D90000; color: #fff; border: none; }
+.num {font-weight:bold; color:#F60; letter-spacing:0px;}
+
+.top { background: #275cac; height: 84px; color: #FFF; line-height: 84px; width: 100%; position: absolute; min-width: 1000px; z-index: 10; }
+.top .logo { float: left; margin: 20px 10px 20px 20px; line-height: 42px; height: 42px; }
+.top .topt { font-size: 16px; font-weight: bold; color: #8eb8f9; float: left; }
+.top .menu { font-size: 16px; font-weight: bold; float: right; margin-right: 20px; margin-left: 20px; cursor: pointer; }
+.top .menua { font-size: 16px; font-weight: bold; float: right; margin-right: 20px; margin-left: 20px; color: #FF0; cursor: pointer; }
+.container { clear: both; min-width: 1160px; height: 100%; }
+
+.left { background-color: #efefef; float: left; width: 253px; border-right: 1px solid #bfbfbf; height: 100%;/* [disabled]min-height: 100%; */ box-shadow: 2px 0px 4px #eee; position: relative; z-index: 1; }
+.left .login { padding: 30px 20px; margin-top: 0px; position: relative; color: #555; border-bottom: 1px solid #ddd; overflow: hidden; }
+.left .login .user { font-size: 14px; margin-bottom: 8px; color: #999; }
+.left .login .user strong {color:#000;}
+.left .footer { position: absolute; left: 20px; bottom: 15px; letter-spacing: 0px; color: #bbb; font-size: 11px; font-family: Arial; }
+.left .login .logout { position: absolute; top: 29px; right: 20px; color: #FFF; background: #D90000; font: 11px Dotum; border: none; height: 24px; border-radius: 3px; }
+.left .lefttable {clear:both;}
+.left .lefttable td {padding:10px 0px 10px 20px; border-bottom:1px solid #ddd; color:#888; font-family:Dotum; font-size:11px;}
+.left .lefttable .tdtitle {font-weight:bold; color:#666;}
+.left .lefttable .date {letter-spacing:0px}
+.left .search { padding-top: 15px; padding-bottom: 15px; padding-left: 20px; }
+
+.right { float: left; margin-top: 0px; height: 100%; }
+.right .searchcol { padding: 10px 10px 10px 20px; border-bottom: 1px solid #ddd; color: #333; min-width: 900px; }
+.right .result_area { padding: 20px; font-size: 14px; color: #275CAC; position: relative; overflow: hidden; }
+.right .result_area .table { margin-top:10px; color:#555;  width:100%; min-width:900px; border-collapse:collapse; }
+.right .result_area .table th {background-color:#f2f2f2; color:#000; font-weight:bold; border-bottom:2px solid #275CAC; font-size:13px; padding:5px}
+.right .result_area .table tr  {border-top:1px solid #ddd; border-left:1px solid #ddd; }
+.right .result_area .table td {text-align:center; padding:5px; border-bottom:1px solid #ddd;border-right:1px solid #ddd; }
+.right .result_area .repoint { position: absolute; top: 20px; left: 135px; text-align: right; width: 784px; color: #666; }
+.right .sorting_a { text-align: center; padding: 0px 20px 20px; }
+.right .tabcon { padding: 20px 20px 0px; border-bottom: 1px solid #ddd; height: 49px; }
+.right .notice_area { margin-top:0px; padding: 30px; font-size: 14px; color: #275CAC; position: relative; overflow: hidden; color: #555; line-height: 30px; float:left; text-align:left; clear:both;}
+.right .tabcon .tabon { padding: 15px 25px; float: left; font-size: 14px; background-color: #fff; border-top: 1px solid #ddd; border-right: 1px solid #ddd; border-left: 1px solid #ddd; font-weight: bold; border-radius: 4px 4px 0px 0px; cursor: pointer; }
+.right .tabcon .taboff { padding: 15px 25px; float: left; font-size: 14px; color: #888; cursor: pointer; }
+
+.header {width:45px; background-color:#f2f2f2; color:#000; font-weight:bold; border-right:2px solid #275CAC; font-size:13px; padding:13px 10px}
+
+#loading {
+	height: 100%;
+	left: 0px;
+	position: fixed;
+	_position:absolute; 
+	top: 0px;
+	width: 100%;
+	filter:alpha(opacity=50);
+	-moz-opacity:0.5;
+	opacity : 0.5;
+}
+.loading {
+	background-color: white;
+	z-index: 199;
+}
+#loading_txt{
+	width:100px;
+	position:absolute; 
+	top:50%;
+	left:50%;
+	height:100px;
+	z-index: 200;
+}	
+.title_a { font-size: 18px; font-weight: bold; color: #fff; padding: 15px 20px; background-color: #275cac; }
