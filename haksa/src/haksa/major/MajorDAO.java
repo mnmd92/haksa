@@ -14,8 +14,8 @@ public class MajorDAO {
 	private Connection connect() throws ClassNotFoundException, SQLException {
 		Class.forName("oracle.jdbc.driver.OracleDriver");
 		String url="jdbc:oracle:thin:@127.0.0.1:1521:xe";
-		String username="sugang";
-		String password="sugang";
+		String username="shin";
+		String password="shin";
 		Connection con=DriverManager.getConnection(url, username, password);
 		
 		return con;

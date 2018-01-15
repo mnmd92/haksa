@@ -2,6 +2,7 @@
 <%@page import="haksa.major.MajorDAO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -9,21 +10,21 @@
 <link href="../css/ku.css" rel="stylesheet" type="text/css">
 
 <script>
-	/* function changeGubun() {
-		var x = document.getElementById("cb_gubun");
-		if (x.options[x.selectedIndex].value == "2") {
-			document.getElementById("youngyeok").style.display = "";
-		} else {
-			document.getElementById("youngyeok").style.display = "none";
-		}
-	} */
-	
+
 	function changeGubun() {
 		var x = document.getElementById("cb_gubun");
 		if (x.options[x.selectedIndex].value == "1") {
+			document.getElementById("gwamok").style.display = "";
 			document.getElementById("daehak").style.display = "";
-		} else {
-			document.getElementById("daehak").style.display = "none";
+			document.getElementById("hakgwa").style.display = "";
+			document.getElementById("jeongong").style.display = "";
+			document.getElementById("haknyeon").style.display = "";
+		} else if (x.options[x.selectedIndex].value == "2") {
+			document.getElementById("gwamok").style.display = "";
+			document.getElementById("daehak").style.display = "";
+		} else if (x.options[x.selectedIndex].value == "3") {
+			document.getElementById("youngyeok").style.display = "";
+			document.getElementById("gwamok").style.display = "";
 		}
 	}
 	
@@ -31,17 +32,22 @@
 </head>
 
 <body onload="$.app.fn_init();">
+<%
+	MajorDAO mjdao = new MajorDAO();
+%>
 	<div class="right">
     <div class="searchcol">
+    	<span id="gubun" style="display:inline-block;">
     	<strong id="st_gubun">구분</strong>
-	    <select name="select" class="input" id="cb_gubun" title="구분" onchange="changeGubun()" style="display:inline-block;">
+	    <select name="select" class="input" id="cb_gubun" title="구분" onchange="changeGubun()">
 			<option value="1" selected>전공과목</option>
 			<option value="2">기초교양</option>
 			<option value="3">균형교양</option>
 			<option value="4">특화교양</option>
 			<option value="5">자유선택</option>
 	    </select>
-     
+     	</span>
+     	
 		<span id="youngyeok" style="display:none;">
 		<strong id="st_youngyeok">&nbsp;&nbsp;영역</strong>
 		<select class="input" name="select" id="cb_youngyeok" title="영역" onchange="changeGubun()">
@@ -73,7 +79,6 @@
       	<strong id="st_daehak">&nbsp;&nbsp;대학</strong>   
 		<select name="select" class="input" id="cb_daehak" title="대학">
 			<%
-			MajorDAO mjdao = new MajorDAO();
 			List<String> majorList = mjdao.daehakList();
 			
 			for(int i=0; i<majorList.size(); i++) {
@@ -85,19 +90,19 @@
 		</select>
       	</span>
       
-      	<span id="hakgwa" style="display:none;">
+      	<span id="hakgwa" style="display:inline-block;">
 		<strong id="st_hakgwa">&nbsp;&nbsp;학과</strong>  
 		<select name="select" class="input" id="cb_hakgwa" title="학과">
 		</select>
       	</span>
       	
-      	<span id="jeongong" style="display:none;">
+      	<span id="jeongong" style="display:inline-block;">
 		<strong id="st_jeongong">&nbsp;&nbsp;전공</strong>  
 		<select name="select" class="input" id="cb_jeongong" title="전공">
 		</select>
 		</span>
 		
-		<span id="haknyeon" style="display:none;">
+		<span id="haknyeon" style="display:inline-block;">
 		<strong id="st_haknyeon">&nbsp;&nbsp;학년</strong>  
 		<select name="select" class="input" id="cb_haknyeon" title="학년">
 		</select>
