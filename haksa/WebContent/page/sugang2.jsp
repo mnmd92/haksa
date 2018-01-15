@@ -10,7 +10,6 @@
 <link href="../css/ku.css" rel="stylesheet" type="text/css">
 
 <script>
-
 	function changeGubun() {
 		var x = document.getElementById("cb_gubun");
 		if (x.options[x.selectedIndex].value == "1") {
@@ -29,6 +28,11 @@
 	}
 	
 </script>
+
+<script>
+	var x = document.getElementById("cb_daehak").options.[x.selectedIndex].text;
+</script>
+
 </head>
 
 <body onload="$.app.fn_init();">
@@ -79,11 +83,11 @@
       	<strong id="st_daehak">&nbsp;&nbsp;대학</strong>   
 		<select name="select" class="input" id="cb_daehak" title="대학">
 			<%
-			List<String> majorList = mjdao.daehakList();
+			List<String> daehakList = mjdao.daehakList();
 			
-			for(int i=0; i<majorList.size(); i++) {
+			for(int i=0; i<daehakList.size(); i++) {
 			%>
-				<option><%= majorList.get(i)%></option>
+				<option><%= daehakList.get(i)%></option>
 			<%
 			}
 			%>
@@ -93,6 +97,17 @@
       	<span id="hakgwa" style="display:inline-block;">
 		<strong id="st_hakgwa">&nbsp;&nbsp;학과</strong>  
 		<select name="select" class="input" id="cb_hakgwa" title="학과">
+			<%
+			String hakgwa = request.getParameter("x");
+			List<String> hakgwaList = mjdao.hakgwaList(hakgwa);
+
+			for(int i=0; i<hakgwaList.size(); i++) {
+			%>
+				<option><%= hakgwaList.get(i)%></option>
+			<%
+			}
+			%>
+			
 		</select>
       	</span>
       	
