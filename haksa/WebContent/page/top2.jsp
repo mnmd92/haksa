@@ -7,10 +7,11 @@
 <link href="../css/ku.css" rel="stylesheet" type="text/css">
 
 </head>
-<body onload="fn_init();">
-	<div class="top">
-		<div class="logo"><img src="../images/logo.png" /></div>
-		<div class="topt"><span id="sp_campus" style="width:40px;"></span> 학부 &nbsp;<span id="sp_year"></span>년도 &nbsp;<span						id="sp_hakgi"></span> 학기 
+<body style="height:84px">
+	<div class="top"><!-- <img src="../images/logo.png" /> -->
+		<div class="logo"><img src="http://placehold.it/213x42" /></div>
+		<div class="topt">
+			<span id="sp_campus" style="width:40px;"></span> 학부 &nbsp;<span id="sp_year"></span>년도 &nbsp;<span id="sp_hakgi"></span> 학기 
 			<span id="sp_sugang" style="display:none;"> 예비 </span>수강신청<br>
 		</div>
 		<div id="menu1" class="menu" onclick="javascript:fn_move(this);">공지사항</div>

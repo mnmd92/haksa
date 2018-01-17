@@ -8,6 +8,35 @@
 <head>
 <title>register</title>
 <link href="../css/ku.css" rel="stylesheet" type="text/css">
+<script src="http://code.jquery.com/jquery-1.12.1.js"></script>
+<script>
+$(function(){
+	$('#id01').on('click', function(){
+		alert('데이터 요청');
+		$.ajax({
+			url:'test02.jsp',
+			type:'get',
+			success: function(t){
+				alert('성공');
+				alert($(t).text());
+
+				$("<h1></h1>").text($(t).text()).appendTo("body");
+
+			},
+			error: function() {
+				alert('연결실패');
+			}
+			
+		});
+	});
+	
+	$('#id02').on('click', function(){
+		alert('전송');
+	});
+});
+
+</script>
+
 
 <script>
 	function changeGubun() {
@@ -26,7 +55,7 @@
 			document.getElementById("gwamok").style.display = "";
 		}
 	}
-	
+	                                  
 </script>
 
 <script>
@@ -84,20 +113,17 @@
 		<select name="select" class="input" id="cb_daehak" title="대학">
 			<%
 			List<String> daehakList = mjdao.daehakList();
-			
 			for(int i=0; i<daehakList.size(); i++) {
 			%>
 				<option><%= daehakList.get(i)%></option>
-			<%
-			}
-			%>
+			<%}%>
 		</select>
       	</span>
       
       	<span id="hakgwa" style="display:inline-block;">
 		<strong id="st_hakgwa">&nbsp;&nbsp;학과</strong>  
 		<select name="select" class="input" id="cb_hakgwa" title="학과">
-			<%
+			<%-- <%
 			String hakgwa = request.getParameter("x");
 			List<String> hakgwaList = mjdao.hakgwaList(hakgwa);
 
@@ -107,7 +133,11 @@
 			<%
 			}
 			%>
-			
+			 --%>
+			<script>
+				
+			</script>
+			 
 		</select>
       	</span>
       	

@@ -15,7 +15,7 @@ p,ul,li{margin:0; padding:0;}
 .top .menua { font-size: 16px; font-weight: bold; float: right; margin-right: 20px; margin-left: 20px; color: #FF0; cursor: pointer; }
 .container { clear: both; min-width: 1160px; height: 100%; }
 
-.left { background-color: #efefef; float: left; width: 253px; border-right: 1px solid #bfbfbf; height: 100%;/* [disabled]min-height: 100%; */ box-shadow: 2px 0px 4px #eee; position: relative; z-index: 11; }
+.left { background-color: #efefef; float: left; width: 253px; border-right: 1px solid #bfbfbf; height: 100%;/* [disabled]min-height: 100%; */ box-shadow: 2px 0px 4px #eee; position: relative; z-index: 1; }
 .left .login { padding: 30px 20px; margin-top: 0px; position: relative; color: #555; border-bottom: 1px solid #ddd; overflow: hidden; }
 .left .login .user { font-size: 14px; margin-bottom: 8px; color: #999; }
 .left .login .user strong {color:#000;}

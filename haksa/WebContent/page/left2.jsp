@@ -8,9 +8,13 @@
 <title>left</title>
 <link href="../css/ku.css" rel="stylesheet" type="text/css">
 
+<script>
+	self.resizeTo(document.body.scrollWidth , document.body.scrollHeight + 10);
+</script>
+
 </head>
 
-<body onload="$.left.fn_init();">
+<body>
 	<div class="left">
 		<div class="login">
 			<p class="user">
