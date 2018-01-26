@@ -40,8 +40,23 @@ $('#cb_daehak').on('click', function(){
 	$.ajax({
 		url: "../js/data.json",
 		dataType: "json",
-		success: function(result) {
-			$("#opt").text(result[8].DAEHAK);
+		success: function(data) {
+			console.log(data[0].DAEHAK);
+			console.log(data.length);
+			var result = [];
+			 
+			 
+			for(var i=0;i<data.length;i++){
+				console.log("1::::"+data[i].DAEHAK);
+				if($.inArray(data[i].DAEHAK, result))
+					console.log("2::::"+data[i].DAEHAK);
+					result.push(data[i].DAEHAK);	
+			}
+			console.log("111");
+			console.log(result);
+			console.log("222");
+			
+			//$("#opt").text(result[8].DAEHAK);
 		}
 	});
 });
