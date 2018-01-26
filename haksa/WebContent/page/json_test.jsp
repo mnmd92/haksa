@@ -7,9 +7,7 @@
     pageEncoding="UTF-8"%>
 <%@ page import="java.sql.*"%>
 <%@ page import="org.json.simple.*"%>
-<%
-response.setContentType("text/html; charset=UTF-8");
-%>
+
 <%
 	String DB_URL = "jdbc:oracle:thin:@127.0.0.1:1521:XE";
 	String DB_USER = "shin";

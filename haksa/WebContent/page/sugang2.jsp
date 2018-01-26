@@ -86,6 +86,7 @@ $(function(){
 
 <script>
 	var x = document.getElementById("cb_daehak").options.[x.selectedIndex].text;
+	
 </script>
 
 </head>
