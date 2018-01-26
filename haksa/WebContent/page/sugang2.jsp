@@ -10,6 +10,7 @@
 <link href="../css/ku.css" rel="stylesheet" type="text/css">
 <script src="http://code.jquery.com/jquery-1.12.1.js"></script>
 <script>
+/* 
 $(function(){
 	$('#id01').on('click', function(){
 		alert('데이터 요청');
@@ -34,7 +35,32 @@ $(function(){
 		alert('전송');
 	});
 });
+ */
 
+$(function(){
+		$('#cb_daehak').on('click', function(){
+			$.ajax({
+				url:'test02.jsp',
+				type:'get',
+				success: function(t){
+					alert('성공');
+					alert($(t).text());
+
+					$("<h1></h1>").text($(t).text()).appendTo("body");
+
+				},
+				error: function() {
+					alert('연결실패');
+				}
+				
+			});
+		});
+		
+		$('#id02').on('click', function(){
+			alert('전송');
+		});
+	});
+ 
 </script>
 
 
@@ -108,7 +134,7 @@ $(function(){
 		</select>
 		</span>
       
-      	<span id="daehak" style="display:none;">
+      	<%-- <span id="daehak" style="display:none;">
       	<strong id="st_daehak">&nbsp;&nbsp;대학</strong>   
 		<select name="select" class="input" id="cb_daehak" title="대학">
 			<%
@@ -118,7 +144,17 @@ $(function(){
 				<option><%= daehakList.get(i)%></option>
 			<%}%>
 		</select>
+      	</span> --%>
+      	
+      	<span id="daehak" style="display:none;">
+      	<strong id="st_daehak">&nbsp;&nbsp;대학</strong>   
+		<select name="select" class="input" id="cb_daehak" title="대학">
+			<%
+			
+			%>
+		</select>
       	</span>
+      	
       
       	<span id="hakgwa" style="display:inline-block;">
 		<strong id="st_hakgwa">&nbsp;&nbsp;학과</strong>  

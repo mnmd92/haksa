@@ -34,7 +34,7 @@ iframe {border:none; }
 		</iframe>
 	</div>
 
-	<div id="leftt" style="height:800px">
+	<div id="leftt" style="height:100%">
 		<iframe src="left2.jsp" width="254px" height="100%" scrolling="no">
 		</iframe>
 	</div>

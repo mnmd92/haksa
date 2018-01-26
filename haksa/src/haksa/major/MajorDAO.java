@@ -23,7 +23,7 @@ public class MajorDAO {
 	
 	public List<String> daehakList() throws ClassNotFoundException, SQLException {
 		List<String> daehakList = new ArrayList<>();
-		String sql="select distinct daehak from MAJOR";
+		String sql="SELECT DISTINCT DAEHAK FROM MAJOR";
 		PreparedStatement pstm=connect().prepareStatement(sql);
 		ResultSet rs=pstm.executeQuery();
 		
@@ -35,7 +35,7 @@ public class MajorDAO {
 	
 	public List<String> hakgwaList(String daehak) throws ClassNotFoundException, SQLException {
 		List<String> hakgwaList = new ArrayList<>();
-		String sql="select distinct hakgwa from major where daehak=?";
+		String sql="SELECT DISTINCT HAKGWA FROM MAJOR WHERE DAEHAK=?";
 		
 		PreparedStatement pstm=connect().prepareStatement(sql);
 		pstm.setString(1, daehak);
