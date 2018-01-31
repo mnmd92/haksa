@@ -9,8 +9,13 @@
 <title>register</title>
 <link href="../css/ku.css" rel="stylesheet" type="text/css">
 
+<script src="http://code.jquery.com/jquery-1.12.1.js">
+	function start() {
+		
+		
+	}
 
-
+</script>
 <script>
 	function changeGubun() {
 		var x = document.getElementById("cb_gubun");
@@ -181,8 +186,19 @@
 		</table>
     </div>
 </div>
-<script src="http://code.jquery.com/jquery-1.12.1.js"></script>
+
 <script type="text/javascript">
+
+
+</script>
+
+<script type="text/javascript">
+	$(window).load(function(){
+		start();
+		
+	});
+	
+
 	$('#cb_daehak').on('click', function() {
 		$('#cb_daehak').unbind('click');
 		$.ajax({

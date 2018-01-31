@@ -16,7 +16,7 @@ knu_combo.gwamok = {};
  * @param isSugang 수강신청 페이지인지 여부 
  */
 knu_combo.prototype.getCombo = function(isSugang) {
-	$.getJSON( "../json/combo.json", function( data ) {
+	$.getJSON( "./combo.json", function( data ) {
 		knu_combo.comboData = data;
 		knu_combo.Data(isSugang);
 	});
@@ -158,7 +158,38 @@ knu_combo.dispGwamok = function(gwamokSqlmap) {
 //	alert(gwamokSqlmap);
 	if( combo ) {
 		var data = eval("knu_combo.comboData." + gwamokSqlmap);
-		var user = parent.window._user;
+
+		var _user = {};
+
+		
+	_user['a'] = '2';
+	_user['id'] = '201414030';
+	_user['name'] = '신승용';
+	_user['hakgi'] = '4';
+	_user['year'] = '2017';
+	_user['campus'] = 'C';
+	_user['daehak_name'] = 'IT대학';
+	_user['daehak'] = '57';
+	_user['hakgwa_name'] = '컴퓨터학부';
+	_user['hakgwa'] = '06102';
+	_user['jeongong_name'] = '컴퓨터정보통신공학전공';
+	_user['jeongong'] = '0610201';
+	_user['haknyeon'] = '4';
+	_user['juya_gb'] = '1';
+	_user['guyeok'] = '';
+	_user['campus'] = '1';
+	_user['witak_danche_cd'] = '000';
+	_user['hakseoksa'] = '2';
+	_user['joleop_hakjeom'] = '130';
+	_user['seolmun_yn'] = '2';
+	_user['notice_type'] = 'D';
+	_user['yebi_gbn'] = 'B';
+	_user['gigan_gbn'] = 'B2';
+	_user['sugang_type'] = 'N';
+
+		
+		
+		var user = _user;
 		var user_jeongong = user["jeongong"];
 		combo.empty();
 		if( data ) {
@@ -185,7 +216,37 @@ knu_combo.selectGwamok = function(gbn, sqlmap) {
 	if( !data ) {
 		// 조회한다. 
 		try {
-			var user = parent.window._user;
+			var _user = {};
+
+			
+			_user['a'] = '2';
+			_user['id'] = '201414030';
+			_user['name'] = '신승용';
+			_user['hakgi'] = '4';
+			_user['year'] = '2017';
+			_user['campus'] = 'C';
+			_user['daehak_name'] = 'IT대학';
+			_user['daehak'] = '57';
+			_user['hakgwa_name'] = '컴퓨터학부';
+			_user['hakgwa'] = '06102';
+			_user['jeongong_name'] = '컴퓨터정보통신공학전공';
+			_user['jeongong'] = '0610201';
+			_user['haknyeon'] = '4';
+			_user['juya_gb'] = '1';
+			_user['guyeok'] = '';
+			_user['campus'] = '1';
+			_user['witak_danche_cd'] = '000';
+			_user['hakseoksa'] = '2';
+			_user['joleop_hakjeom'] = '130';
+			_user['seolmun_yn'] = '2';
+			_user['notice_type'] = 'D';
+			_user['yebi_gbn'] = 'B';
+			_user['gigan_gbn'] = 'B2';
+			_user['sugang_type'] = 'N';
+
+				
+				
+				var user = _user;
 			
 			var inData = {
 				HAKGI : user["hakgi"]
@@ -239,7 +300,37 @@ knu_combo.hiddenCombo = function() {
  */
 knu_combo.Data = function(isSugang) {
 	try {
-		var user = parent.window._user;
+		var _user = {};
+
+		
+		_user['a'] = '2';
+		_user['id'] = '201414030';
+		_user['name'] = '신승용';
+		_user['hakgi'] = '4';
+		_user['year'] = '2017';
+		_user['campus'] = 'C';
+		_user['daehak_name'] = 'IT대학';
+		_user['daehak'] = '57';
+		_user['hakgwa_name'] = '컴퓨터학부';
+		_user['hakgwa'] = '06102';
+		_user['jeongong_name'] = '컴퓨터정보통신공학전공';
+		_user['jeongong'] = '0610201';
+		_user['haknyeon'] = '4';
+		_user['juya_gb'] = '1';
+		_user['guyeok'] = '';
+		_user['campus'] = '1';
+		_user['witak_danche_cd'] = '000';
+		_user['hakseoksa'] = '2';
+		_user['joleop_hakjeom'] = '130';
+		_user['seolmun_yn'] = '2';
+		_user['notice_type'] = 'D';
+		_user['yebi_gbn'] = 'B';
+		_user['gigan_gbn'] = 'B2';
+		_user['sugang_type'] = 'N';
+
+			
+			
+			var user = _user;
 		// 고정된 값을 가지는 콤보 설정 
 		// 사용자에 따른 컴포넌트 사용 여부 결정
 		//
@@ -350,7 +441,37 @@ knu_combo.prototype.changeHakgwa = function(daehak, defValue) {
 	}
 
 	// 전공을 변경시킴. 
-	var user = parent.window._user;
+	var _user = {};
+
+	
+	_user['a'] = '2';
+	_user['id'] = '201414030';
+	_user['name'] = '신승용';
+	_user['hakgi'] = '4';
+	_user['year'] = '2017';
+	_user['campus'] = 'C';
+	_user['daehak_name'] = 'IT대학';
+	_user['daehak'] = '57';
+	_user['hakgwa_name'] = '컴퓨터학부';
+	_user['hakgwa'] = '06102';
+	_user['jeongong_name'] = '컴퓨터정보통신공학전공';
+	_user['jeongong'] = '0610201';
+	_user['haknyeon'] = '4';
+	_user['juya_gb'] = '1';
+	_user['guyeok'] = '';
+	_user['campus'] = '1';
+	_user['witak_danche_cd'] = '000';
+	_user['hakseoksa'] = '2';
+	_user['joleop_hakjeom'] = '130';
+	_user['seolmun_yn'] = '2';
+	_user['notice_type'] = 'D';
+	_user['yebi_gbn'] = 'B';
+	_user['gigan_gbn'] = 'B2';
+	_user['sugang_type'] = 'N';
+
+		
+		
+		var user = _user;
 	
 	if( defValue ) {
 		combo.val(defValue);
@@ -402,7 +523,37 @@ knu_combo.prototype.changeJeongong = function(hakgwa,defValue) {
 		combo.val(defValue);
 	} else {
 		// 사용자 기본값으로 체크  
-		var user = parent.window._user;
+		var _user = {};
+
+		
+		_user['a'] = '2';
+		_user['id'] = '201414030';
+		_user['name'] = '신승용';
+		_user['hakgi'] = '4';
+		_user['year'] = '2017';
+		_user['campus'] = 'C';
+		_user['daehak_name'] = 'IT대학';
+		_user['daehak'] = '57';
+		_user['hakgwa_name'] = '컴퓨터학부';
+		_user['hakgwa'] = '06102';
+		_user['jeongong_name'] = '컴퓨터정보통신공학전공';
+		_user['jeongong'] = '0610201';
+		_user['haknyeon'] = '4';
+		_user['juya_gb'] = '1';
+		_user['guyeok'] = '';
+		_user['campus'] = '1';
+		_user['witak_danche_cd'] = '000';
+		_user['hakseoksa'] = '2';
+		_user['joleop_hakjeom'] = '130';
+		_user['seolmun_yn'] = '2';
+		_user['notice_type'] = 'D';
+		_user['yebi_gbn'] = 'B';
+		_user['gigan_gbn'] = 'B2';
+		_user['sugang_type'] = 'N';
+
+			
+			
+			var user = _user;
 		combo.val(user["jeongong"]);
 	}
 	
