@@ -39,7 +39,6 @@
 						var issugang = true;
 						var _user = {};
 
-						
 						_user['a'] = '2';
 						_user['id'] = '201414030';
 						_user['name'] = '신승용';
@@ -56,11 +55,11 @@
 						_user['juya_gb'] = '1';
 						_user['guyeok'] = '';
 						_user['campus'] = '1';
-						_user['witak_danche_cd'] = '000';
-						_user['hakseoksa'] = '2';
+					//	_user['witak_danche_cd'] = '000';
+					//	_user['hakseoksa'] = '2';
 						_user['joleop_hakjeom'] = '130';
-						_user['seolmun_yn'] = '2';
-						_user['notice_type'] = 'D';
+					//	_user['seolmun_yn'] = '2';
+					//	_user['notice_type'] = 'D';
 						_user['yebi_gbn'] = 'B';
 						_user['gigan_gbn'] = 'B2';
 						_user['sugang_type'] = 'N';
@@ -81,14 +80,14 @@
 						
 						// 구분 변경 
 						$("#cb_gubun").change(function() {
-							fsp.combo.changeGubun($(this).val());
+							fsp.combo.changeGubun($(this).val()); 	//combo.js에 있는 메소드
 						});
 						
 						//if(!((user["hakgi"] == "3" || user["hakgi"] == "4") && user["campus"] == "2")){ //삼척계절학기경우 제1구역만 했었는데 다른대학에서도 강좌개설이 이뤄짐
 												
 						// 대학 변경 
 						$("#cb_daehak").change(function() {
-							fsp.combo.changeHakgwa($(this).val());
+							fsp.combo.changeHakgwa($(this).val());	
 						});
 						// 학과 변경 
 						$("#cb_hakgwa").change(function() {

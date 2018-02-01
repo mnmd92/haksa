@@ -7,16 +7,27 @@
 <title>register</title>
 <link href="../css/ku.css" rel="stylesheet" type="text/css">
 
+<!-- 
 <script type="text/javascript" src="../libs/use/jquery/jquery.js"></script>
 <script type="text/javascript" src="../libs/use/jquery/jquery.json.js"></script>
 <script type="text/javascript" src="../js/common.js"></script>
-<script type="text/javascript" src="../js/combo.js"></script>
+<script type="text/javascript" src="../js/combo.js"></script> 
+-->
+<script src="http://code.jquery.com/jquery-1.12.1.js">
 <script type="text/javascript">
 
 $(function(){
 	$.extend({
 		app : {
 			fn_init : function() {
+				var user = {};
+				user.id = '201414030';
+				user.name = '신승용';
+				user.daehak_name = 'IT대학';
+				user.hakgwa_name = '컴퓨터학부';
+				user.jeongong_name = '컴퓨터정보통신공학과';
+				
+				
 				
 			},	// end fn_init 
 			

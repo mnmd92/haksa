@@ -1,7 +1,7 @@
 /**
  * 콤보 데이터를 처리한다.<p>
  */
-var knu_combo = function() {
+var knu_combo = function() {	// knu_combo 변수에 함수를 할당. 
 };
 
 // 콤보 데이터 
